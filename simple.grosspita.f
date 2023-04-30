@@ -43,7 +43,7 @@ c     cequ=0.d0
       ene0=0.d0
       
       do i=2,n1-1
-      fred(i)=(freo(i-1)+freo(i+1)-2.d0*freo(i))/(step*step)
+            fred(i)=(freo(i-1)+freo(i+1)-2.d0*freo(i))/(step*step)
       enddo
       fred(n1)=(freo(n1-1)-2.d0*freo(i))/(step*step)
       do i=1,n1
