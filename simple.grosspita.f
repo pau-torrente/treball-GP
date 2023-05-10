@@ -54,8 +54,7 @@ c     cequ=0.d0
       ene0=ene0-freo(i)*fred(i)*0.5d0
      1 +0.5d0*xr2*freo(i)*freo(i)
      1 +0.5d0*cequ*xr2*(freo(i)/xr(i))**4
-      xmu(i)=-0.5d0*fred(i)/freo(i)
-     1 +0.5d0*xr2+cequ*(freo(i)/xr(i))**2
+      xmu(i)=-0.5d0*fred(i)/freo(i)+0.5d0*xr2+cequ*(freo(i)/xr(i))**2
       endif
       fren(i)=freo(i)-time*xmu(i)*freo(i)
       xnorm=xnorm+fren(i)*fren(i)
